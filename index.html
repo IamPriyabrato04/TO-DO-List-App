@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD Basics</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+
+<body>
+  <h1>To-Do List App</h1>
+  <div class="container">
+    <div class="left">
+      <form id="form">
+        <label for="textfield">Write your To-Do here</label>
+        <br><br>
+        <input type="text" name="textfield" id="input">
+        <br><br>
+        <div id="msg"></div>
+        <button type="submit" id="add">ADD</button>
+      </form>
+    </div>
+    <div class="right">
+      <h3>Your To-Do(s) here</h3>
+      <div id="posts">
+        <div class="list">
+          <p>To-Do 1</p>
+          <span class="options">
+            <i onClick="editPost(this)" class="fas fa-edit"></i>
+            <i onClick="deletePost(this)" class="fas fa-trash-alt"></i>
+          </span>
+        </div>
+        <div class="list">
+          <p>To-Do 2</p>
+          <span class="options">
+            <i onClick="editPost(this)" class="fas fa-edit"></i>
+            <i onClick="deletePost(this)" class="fas fa-trash-alt"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+
+</html>
